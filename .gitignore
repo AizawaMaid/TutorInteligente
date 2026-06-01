@@ -1,0 +1,19 @@
+# --- Python (Lo que no aporta) ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# --- Archivos de Datos / Respaldos temporales ---
+# Si "datos" es una carpeta temporal o de pruebas:
+datos/
+
+
+# --- Sistema y Editores ---
+.DS_Store
+.vscode/
+.idea/

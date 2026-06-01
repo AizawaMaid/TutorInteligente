@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Inteligente Semántico - UACM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Paleta de colores personalizada Verde Azulado */
+        :root {
+            --verde-azulado-dark: #0f4c5c;
+            --verde-azulado-medium: #118ab2;
+            --verde-azulado-light: #e0f2f1;
+            --verde-azulado-accent: #00a896;
+            --verde-azulado-border: #b2dfdb;
+        }
+
+        .bg-custom-navbar {
+            background-color: var(--verde-azulado-dark) !important;
+        }
+
+        .bg-custom-header-primary {
+            background-color: var(--verde-azulado-dark) !important;
+            color: #ffffff !important;
+        }
+
+        .bg-custom-header-secondary {
+            background-color: var(--verde-azulado-medium) !important;
+            color: #ffffff !important;
+        }
+
+        .btn-custom-submit {
+            background-color: var(--verde-azulado-accent) !important;
+            border-color: var(--verde-azulado-accent) !important;
+            color: #ffffff !important;
+        }
+
+        .btn-custom-submit:hover {
+            background-color: var(--verde-azulado-dark) !important;
+            border-color: var(--verde-azulado-dark) !important;
+            color: #ffffff !important;
+        }
+
+        .materia-scroll-box {
+            max-height: 180px; 
+            overflow-y: auto; 
+            background-color: #fff;
+            border-color: var(--verde-azulado-border) !important;
+        }
+
+        .card {
+            border-color: var(--verde-azulado-border);
+        }
+
+        .card-header h5 {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .text-success-custom {
+            color: var(--verde-azulado-accent) !important;
+        }
+
+        .text-danger-custom {
+            color: #c94c4c !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-dark bg-custom-navbar mb-4 shadow-sm">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Sistema Tutor Inteligente </span>
+        </div>
+    </nav>
+
+    <div class="container-fluid px-4 mb-5">
+        <div class="row">
+            
+            <div class="col-lg-5 col-md-12 mb-4">
+                
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-custom-header-primary py-2">
+                        <h5>Consultar Historial Semántico</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted small">Selecciona un alumno para ejecutar el razonador Pellet sobre sus axiomas.</p>
+                        <div class="input-group">
+                            <label class="input-group-text" for="studentSelect">Estudiante:</label>
+                            <select class="form-select" id="studentSelect" onchange="const opt=this.options[this.selectedIndex]; cargarRecomendaciones(this.value, opt.getAttribute('data-origen'))">
+                                <option selected disabled value="">Elegir perfil...</option>
+                                {% for est in estudiantes %}
+                                    <option value="{{ est.id }}" data-origen="{{ est.origen }}">{{ est.nombre }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-header bg-custom-header-secondary text-white py-2">
+                        <h5>Crear / Actualizar Perfil</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="formEstudiante" onsubmit="guardarPerfilIdeal(event)">
+                            
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">ID Único (Ej: juan_A):</label>
+                                    <input type="text" class="form-control form-control-sm" id="formId" placeholder="juan_A" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold">Nombre Completo:</label>
+                                    <input type="text" class="form-control form-control-sm" id="formNombre" placeholder="Juan Alberto" required>
+                                </div>
+                            </div>
+
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-4">
+                                    <label class="form-label small fw-bold">Semestre Actual:</label>
+                                    <input type="number" class="form-control form-control-sm" id="formSemestre" min="1" max="10" value="6" required>
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="form-label small fw-bold">Área de Interés Principal:</label>
+                                    <select class="form-select form-select-sm" id="formAreaInteres" required>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 border-top pt-2">
+                                <span class="d-block mb-2 small fw-bold text-secondary">HISTORIAL ACADÉMICO</span>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label text-success-custom small fw-bold mb-1">Marcar Materias APROBADAS:</label>
+                                    <div id="contenedorAprobadas" class="p-2 border rounded materia-scroll-box shadow-sm"></div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label text-danger-custom small fw-bold mb-1">Marcar Materias NO APROBADAS / PENDIENTES:</label>
+                                    <div id="contenedorNoAprobadas" class="p-2 border rounded materia-scroll-box shadow-sm"></div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-custom-submit btn-sm w-100 mt-2 fw-bold">Guardar Perfil </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-7 col-md-12">
+                <div class="card shadow-sm h-100">
+                    <div class="card-header bg-custom-header-primary text-white py-2 d-flex justify-content-between align-items-center">
+                        <h5>Diagnóstico Deductivo de Reglas Semánticas (Pellet)</h5>
+                        <div id="spinner" class="spinner-border spinner-border-sm text-light d-none" role="status"></div>
+                    </div>
+                    <div class="card-body bg-white" id="bloqueResultados">
+                        <div class="alert alert-info text-center my-4">
+                            Selecciona un estudiante de la lista para activar las inferencias e hibridación en memoria.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    
+</body>
+</html>

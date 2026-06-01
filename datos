@@ -1,0 +1,3 @@
+sudo docker start mongodb-tutor
+sudo docker ps
+

@@ -1,0 +1,1260 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/"
+     xml:base="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:ontologiauacm="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#aprobo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#aprobo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#interesado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#interesado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#interesadoEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#interesadoEn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noAprobo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noAprobo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noRecomienda -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noRecomienda">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#puedeIncribir -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#puedeIncribir">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#recomendacionArea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#recomendacionArea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#recomendacionSemestre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#recomendacionSemestre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#areaNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#areaNombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#estudianteNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#estudianteNombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#materiaNombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#materiaNombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#materiaSemestre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#materiaSemestre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#numMaxMaterias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#numMaxMaterias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#prioridad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#prioridad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#semestreActual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#semestreActual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Administracion de proyectos 1</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI"/>
+        <ontologiauacm:materiaNombre>Administración de proyectos II</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aplicaciones_web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aplicaciones_web">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:areaNombre>Aplicaciones web</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Arquitectura de Software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA"/>
+        <ontologiauacm:materiaNombre>Cómputo evolutivo</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CalculoIntegral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CalculoIntegral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontologiauacm:materiaSemestre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Carolina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Carolina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ingles_III"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#POO"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisDistribuidos"/>
+        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisTR"/>
+        <ontologiauacm:interesado rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CE"/>
+        <ontologiauacm:interesado rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SE"/>
+        <ontologiauacm:interesadoEn rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
+        <ontologiauacm:interesadoEn rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnologias_de_Bases_de_Datos"/>
+        <ontologiauacm:noAprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CalculoIntegral"/>
+        <ontologiauacm:noAprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ComputoEvolutivo"/>
+        <ontologiauacm:noAprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales"/>
+        <ontologiauacm:estudianteNombre>Carolina Jaramillo Herrera</ontologiauacm:estudianteNombre>
+        <ontologiauacm:numMaxMaterias rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:numMaxMaterias>
+        <ontologiauacm:semestreActual rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:semestreActual>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ComputoEvolutivo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ComputoEvolutivo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#DEIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#DEIS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware"/>
+        <ontologiauacm:materiaNombre>Diseño de experimentos en ingeniería de software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#GT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#GT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware"/>
+        <ontologiauacm:materiaNombre>Gestión tecnológica</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Inteligencia Artificial</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ingles_III -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ingles_III">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Ingles III</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Baja</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:areaNombre>Inteligencia Artificial</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Metodología de la investigación</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Metricas de Software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#POO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#POO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Programacion Orientada a Objetos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_moviles_y_embebidos"/>
+        <ontologiauacm:materiaNombre>Sistemas embebidos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisDistribuidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisDistribuidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Sistemas Distribuidos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisTR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisTR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:materiaNombre>Sistemas en Tiempo Real</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_moviles_y_embebidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_moviles_y_embebidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:areaNombre>Sistemas moviles y embebidos</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnologias_de_Bases_de_Datos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnologias_de_Bases_de_Datos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <ontologiauacm:areaNombre>Tecnologias de Bases de Datos</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/se">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/sm">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Se recomienda materia para inscribir</rdfs:comment>
+        <rdfs:label>inscribir</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#aprobo"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#puedeIncribir"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>No se recomienda por no cumplir los prerrequisitos</rdfs:comment>
+        <rdfs:label>No recomienda</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noAprobo"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/p"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noRecomienda"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Se recomienda primero semestres inferiores al actual si es que los debe</rdfs:comment>
+        <rdfs:label>Semestre</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#semestreActual"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/se"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#materiaSemestre"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/sm"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/sm"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/se"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#noAprobo"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#recomendacionSemestre"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Se recomienda por el area de interes</rdfs:comment>
+        <rdfs:label>Area</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#interesadoEn"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/a"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#recomendacionArea"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/e"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM/m"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
