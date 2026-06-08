@@ -23,7 +23,7 @@ class TutorInteligenteModel:
             for est in estudiantes_mongo:
                 lista_combinada.append({
                     "id": est["_id"],
-                    "nombre": f"🟢 [DB] {est.get('nombre_completo', est['_id'])}",
+                    "nombre": f"[DB] {est.get('nombre_completo', est['_id'])}",
                     "origen": "mongodb"
                 })
         except Exception as e:
@@ -36,7 +36,7 @@ class TutorInteligenteModel:
                 if not any(e["id"] == individuo.name for e in lista_combinada):
                     lista_combinada.append({
                         "id": individuo.name,
-                        "nombre": f"🦉 [Protégé] {individuo.name.replace('_', ' ')}",
+                        "nombre": f"[Protégé] {individuo.name.replace('_', ' ')}",
                         "origen": "protege"
                     })
                     
@@ -106,12 +106,13 @@ class TutorInteligenteModel:
         """
         Ejecuta el razonador Pellet garantizando la resolución nativa de propiedades
         mediante el Namespace de la ontología para activar todas las reglas SWRL.
+        Incluye un filtro estricto para no recomendar materias que ya fueron aprobadas.
         """
         resultados = {
-            "recomendacion_area": [],      # Regla 1 (Vocacional)
+            "recomendacion_area": [],      # Regla 1 (Vocacional Nueva)
             "no_recomienda": [],           # Regla 2 (Bloqueadas)
             "recomendacion_semestre": [],   # Regla 3 (Rezago)
-            "puede_inscribir": []          # Regla 4 (Prerrequisitos válidos)
+            "puede_inscribir": []          # Regla 4 (Prerrequisitos Válidos Nueva)
         }
 
         estudiante_semantico = None
@@ -133,7 +134,7 @@ class TutorInteligenteModel:
                 # Instanciamos el individuo en el Namespace correcto
                 estudiante_semantico = Estudiante(alumno_doc["_id"])
                 
-                # Inyectar Data Property: semestreActual (Obligatorio como lista de enteros para swrlb:lessThan)
+                # Inyectar Data Property: semestreActual
                 if semestreActual:
                     semestre_val = int(alumno_doc.get("semestre_actual", 1))
                     getattr(estudiante_semantico, semestreActual.name).append(semestre_val)
@@ -174,16 +175,16 @@ class TutorInteligenteModel:
                 print("[+] Inferencia semántica completada con éxito.")
             except Exception as e:
                 print(f"[-] Incidente al ejecutar Pellet: {e}")
-                return resultados
 
-            # --- LEER LAS INFERENCIAS DE LAS 4 REGLAS ---
+            # --- LEER LAS INFERENCIAS DE LAS REGLAS RELECTURAS (PELLET) ---
             
-            # Regla 1 & 4: puedeIncribir / recomendacionArea
+            # Intento de lectura directa de Pellet para puedeIncribir
             puedeIncribir_prop = self.ns.puedeIncribir
             if puedeIncribir_prop and hasattr(estudiante_semantico, puedeIncribir_prop.name):
                 for mat in getattr(estudiante_semantico, puedeIncribir_prop.name):
                     resultados["puede_inscribir"].append(mat.name.replace("_", " "))
 
+            # Intento de lectura directa de Pellet para recomendacionArea
             recomendacionArea_prop = getattr(self.ns, "recomendacionArea", None)
             if recomendacionArea_prop and hasattr(estudiante_semantico, recomendacionArea_prop.name):
                 for mat in getattr(estudiante_semantico, recomendacionArea_prop.name):
@@ -195,12 +196,71 @@ class TutorInteligenteModel:
                 for mat in getattr(estudiante_semantico, noRecomienda_prop.name):
                     resultados["no_recomienda"].append(mat.name.replace("_", " "))
 
-            # Configuración de Regla 3: recomendacionSemestre basados en el axioma SWRL de Rezago
-            # Estudiante(?e) ^ Materia(?m) ^ semestreActual(?e, ?se) ^ materiaSemestre(?m, ?sm) ^ swrlb:lessThan(?sm, ?se) ^ noAprobo(?e, ?m) -> recomendacionSemestre(?e, ?m)
+            # Regla 3: recomendacionSemestre
             recomendacionSemestre_prop = getattr(self.ns, "recomendacionSemestre", None)
             if recomendacionSemestre_prop and hasattr(estudiante_semantico, recomendacionSemestre_prop.name):
                 for mat in getattr(estudiante_semantico, recomendacionSemestre_prop.name):
                     resultados["recomendacion_semestre"].append(mat.name.replace("_", " "))
+
+            # =========================================================================
+            # --- MOTOR DE RESPALDO HÍBRIDO CON FILTRO DE APROBADAS ---
+            # =========================================================================
+            
+            lista_aprobadas = getattr(estudiante_semantico, "aprobo", [])
+            lista_reprobadas = getattr(estudiante_semantico, "noAprobo", [])
+            lista_intereses = getattr(estudiante_semantico, "interesadoEn", [])
+            
+            nombres_aprobadas = [m.name for m in lista_aprobadas if m]
+            nombres_reprobadas = [m.name for m in lista_reprobadas if m]
+            nombres_intereses = [a.name for a in lista_intereses if a]
+
+            clase_materia = self.ns.Materia
+            if clase_materia:
+                for materia in clase_materia.instances():
+                    # FILTRO CRÍTICO: Si la materia ya está aprobada, se ignora por completo
+                    if materia.name in nombres_aprobadas:
+                        continue
+
+                    clases_padre = [c.name for c in materia.is_a if hasattr(c, 'name')]
+                    
+                    # Extraer prerrequisitos reales
+                    lista_prereqs = []
+                    if hasattr(materia, "tienePrerrequisitos"):
+                        p_vals = getattr(materia, "tienePrerrequisitos")
+                        lista_prereqs = p_vals if isinstance(p_vals, list) else [p_vals]
+                        lista_prereqs = [p for p in lista_prereqs if p]
+
+                    # Validar si aprobó todos los prerrequisitos
+                    aprobó_prerrequisitos = False
+                    if lista_prereqs:
+                        aprobó_prerrequisitos = all(p.name in nombres_aprobadas for p in lista_prereqs)
+
+                    # --- EVALUACIÓN DE LA REGLA DE PRERREQUISITOS NUEVA ---
+                    # Recomienda si aprobó los requisitos Y está reprobada (o no cursada aún de forma limpia)
+                    if aprobó_prerrequisitos and (materia.name in nombres_reprobadas or materia.name not in nombres_aprobadas):
+                        mat_nombre_limpio = materia.name.replace("_", " ")
+                        if mat_nombre_limpio not in resultados["puede_inscribir"]:
+                            resultados["puede_inscribir"].append(mat_nombre_limpio)
+
+                    # --- EVALUACIÓN DE LA REGLA DE ÁREA (VOCACIONAL) ---
+                    es_optativa = "Materia_Optativa" in clases_padre or "MateriaOptativa" in clases_padre
+                    if es_optativa and aprobó_prerrequisitos:
+                        if hasattr(materia, "tiene"):
+                            areas_vinculadas = getattr(materia, "tiene")
+                            lista_areas = areas_vinculadas if isinstance(areas_vinculadas, list) else [areas_vinculadas]
+                            
+                            if any(a.name in nombres_intereses for a in lista_areas if a):
+                                opt_nombre_limpio = materia.name.replace("_", " ")
+                                if opt_nombre_limpio not in resultados["recomendacion_area"]:
+                                    resultados["recomendacion_area"].append(opt_nombre_limpio)
+
+            # --- LIMPIEZA ADICIONAL EN LA SALIDA DE INFERENCIAS DE PELLET ---
+            # Nos aseguramos de que lo que se devuelva en la lista final jamás colisione con el historial aprobado
+            resultados["puede_inscribir"] = [m for m in resultados["puede_inscribir"] if m.replace(" ", "_") not in nombres_aprobadas]
+            resultados["recomendacion_area"] = [m for m in resultados["recommendation_area"] if m.replace(" ", "_") not in nombres_aprobadas] if "recommendation_area" in resultados else [m for m in resultados["recomendacion_area"] if m.replace(" ", "_") not in nombres_aprobadas]
+
+            for clave in resultados:
+                resultados[clave] = list(set(resultados[clave]))
 
             # --- LIMPIEZA DEL ENTORNO TRANSITORIO (SÓLO MONGODB) ---
             if origen == "mongodb" and estudiante_semantico:

@@ -263,52 +263,24 @@
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Administracion_de_proyectos_I -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Administracion_de_proyectos_I">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Administracion de proyectos 1</ontologiauacm:materiaNombre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Normatividad_y_legislacion"/>
+        <ontologiauacm:materiaNombre>Administración de proyectos I</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosII -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Administracion_de_proyectos_II -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosII">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Administracion_de_proyectos_II">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Administracion_de_proyectos_I"/>
         <ontologiauacm:materiaNombre>Administración de proyectos II</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
@@ -316,89 +288,188 @@
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aplicaciones_web -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aplicaciones_web">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:areaNombre>Aplicaciones web</ontologiauacm:areaNombre>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:materiaNombre>Álgebra y geometría analítica</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_lineal -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_lineal">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Arquitectura de Software</ontologiauacm:materiaNombre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:materiaNombre>Álgebra lineal</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_algoritmos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_algoritmos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:materiaNombre>Análisis de algoritmos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_requisitos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_requisitos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_ingenieria_d_software"/>
+        <ontologiauacm:materiaNombre>Análisis de requisitos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_y_modelamiento_de_software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_y_modelamiento_de_software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_requisitos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_ingenieria_d_software"/>
+        <ontologiauacm:materiaNombre>Análisis y modelamiento de software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Aplicaciones_Web -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Aplicaciones_Web">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <ontologiauacm:areaNombre>Aplicaciones Web</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Inteligencia_Artificial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Inteligencia_Artificial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <ontologiauacm:areaNombre>Inteligencia Artificial</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Sistemas_móviles_y_embebidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Sistemas_móviles_y_embebidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <ontologiauacm:areaNombre>Sistemas móviles y embebidos</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Tecnologías_de_Bases_de_Datos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Tecnologías_de_Bases_de_Datos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
+        <ontologiauacm:areaNombre>Tecnologías de Bases de Datos</ontologiauacm:areaNombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_computadoras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_computadoras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_de_sistemas"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_operativos"/>
+        <ontologiauacm:materiaNombre>Arquitectura de computadoras</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Diseño_de_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Lenguajes_de_programacion"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnicas_de_pruebas_de_software"/>
+        <ontologiauacm:materiaNombre>Arquitectura de software</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CE -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aseguramiento_de_la_calidad_del_software -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CE">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
-        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
-        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA"/>
-        <ontologiauacm:materiaNombre>Cómputo evolutivo</ontologiauacm:materiaNombre>
-        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
-        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aseguramiento_de_la_calidad_del_software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software"/>
+        <ontologiauacm:materiaNombre>Aseguramiento de la calidad del software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CalculoIntegral -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Bases_de_datos -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CalculoIntegral">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Bases_de_datos">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:materiaNombre>Bases de datos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:materiaNombre>Cálculo diferencial</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:materiaNombre>Cálculo integral</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_vectorial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_vectorial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:materiaNombre>Cálculo vectorial</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
@@ -407,22 +478,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Carolina">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estudiante"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#AdmProyectosI"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA"/>
         <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ingles_III"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#POO"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisDistribuidos"/>
-        <ontologiauacm:aprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisTR"/>
-        <ontologiauacm:interesado rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CE"/>
-        <ontologiauacm:interesado rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SE"/>
-        <ontologiauacm:interesadoEn rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
-        <ontologiauacm:interesadoEn rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnologias_de_Bases_de_Datos"/>
-        <ontologiauacm:noAprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#CalculoIntegral"/>
-        <ontologiauacm:noAprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ComputoEvolutivo"/>
-        <ontologiauacm:noAprobo rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales"/>
         <ontologiauacm:estudianteNombre>Carolina Jaramillo Herrera</ontologiauacm:estudianteNombre>
         <ontologiauacm:numMaxMaterias rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:numMaxMaterias>
         <ontologiauacm:semestreActual rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:semestreActual>
@@ -430,37 +486,36 @@
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ComputoEvolutivo -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Computacion_movil -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ComputoEvolutivo">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Computacion_movil">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
-        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
-        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Sistemas_móviles_y_embebidos"/>
+        <ontologiauacm:materiaNombre>Computación móvil</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#DEIS -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#DEIS">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion"/>
-        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:materiaNombre>Construcción y evolución del software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Diseño_de_experimentos_en_ingenieria_de_software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Diseño_de_experimentos_en_ingenieria_de_software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metodologia_de_la_investigacion"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metricas_de_software"/>
         <ontologiauacm:materiaNombre>Diseño de experimentos en ingeniería de software</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
@@ -468,70 +523,116 @@
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#GT -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Diseño_de_software -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#GT">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Diseño_de_software">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#ArquiSoftware"/>
-        <ontologiauacm:materiaNombre>Gestión tecnológica</ontologiauacm:materiaNombre>
-        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_algoritmos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_y_modelamiento_de_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Lenguajes_de_programacion"/>
+        <ontologiauacm:materiaNombre>Diseño de software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ecuaciones_diferenciales_ordinarias -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#IA">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ecuaciones_diferenciales_ordinarias">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Inteligencia Artificial</ontologiauacm:materiaNombre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_lineal"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_I"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_II"/>
+        <ontologiauacm:materiaNombre>Ecuaciones diferenciales ordinarias</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Electricidad_y_magnetismo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Electricidad_y_magnetismo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_vectorial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ecuaciones_diferenciales_ordinarias"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_I"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_II"/>
+        <ontologiauacm:materiaNombre>Electricidad y magnetismo</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Tecnologías_de_Bases_de_Datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Bases_de_datos"/>
+        <ontologiauacm:materiaNombre>Especialidad en bases de datos I</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Tecnologías_de_Bases_de_Datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Bases_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_I"/>
+        <ontologiauacm:materiaNombre>Especialidad en bases de datos II</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estadistica_y_probabilidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estadistica_y_probabilidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral"/>
+        <ontologiauacm:materiaNombre>Estadística y probabilidad</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_orientada_a_objetos"/>
+        <ontologiauacm:materiaNombre>Estructura de datos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Gestion_tecnologica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Gestion_tecnologica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_software"/>
+        <ontologiauacm:materiaNombre>Gestión tecnológica</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
@@ -577,64 +678,110 @@
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_artificial -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:areaNombre>Inteligencia Artificial</ontologiauacm:areaNombre>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_artificial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Inteligencia_Artificial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_de_algoritmos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_la_programacion"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_orientada_a_objetos"/>
+        <ontologiauacm:materiaNombre>Inteligencia artificial</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_de_negocios -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MInvestigacion">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_de_negocios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Tecnologías_de_Bases_de_Datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_II"/>
+        <ontologiauacm:materiaNombre>Inteligencia de negocios (BI)</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_ingenieria_d_software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_ingenieria_d_software">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
+        <ontologiauacm:materiaNombre>Introducción a la ingeniería de software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_la_programacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_la_programacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:materiaNombre>Introducción a la programación</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Lenguajes_de_programacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Lenguajes_de_programacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Teoria_de_la_computacion"/>
+        <ontologiauacm:materiaNombre>Lenguajes de programación</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Matematicas_discretas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Matematicas_discretas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:materiaNombre>Matemáticas discretas</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:materiaNombre>Mecánica I</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_I"/>
+        <ontologiauacm:materiaNombre>Mecánica II</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metodologia_de_la_investigacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metodologia_de_la_investigacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
         <ontologiauacm:materiaNombre>Metodología de la investigación</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
@@ -642,250 +789,269 @@
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metodos_numericos -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#MSoftware">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metodos_numericos">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Metricas de Software</ontologiauacm:materiaNombre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_lineal"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Ecuaciones_diferenciales_ordinarias"/>
+        <ontologiauacm:materiaNombre>Métodos numéricos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metricas_de_software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Metricas_de_software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aseguramiento_de_la_calidad_del_software"/>
+        <ontologiauacm:materiaNombre>Métricas de software</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#POO -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Normatividad_y_legislacion -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#POO">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Normatividad_y_legislacion">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Programacion Orientada a Objetos</ontologiauacm:materiaNombre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aseguramiento_de_la_calidad_del_software"/>
+        <ontologiauacm:materiaNombre>Normatividad y legislación</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_de_sistemas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_de_sistemas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software"/>
+        <ontologiauacm:materiaNombre>Programación de sistemas</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_orientada_a_objetos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_orientada_a_objetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_ingenieria_d_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Introduccion_a_la_programacion"/>
+        <ontologiauacm:materiaNombre>Programación orientada a objetos</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_web -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#RedesNeuronales">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
-        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_Artificial"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SE -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SE">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_moviles_y_embebidos"/>
-        <ontologiauacm:materiaNombre>Sistemas embebidos</ontologiauacm:materiaNombre>
-        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
-        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisDistribuidos -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisDistribuidos">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_web">
         <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Sistemas Distribuidos</ontologiauacm:materiaNombre>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Bases_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software"/>
+        <ontologiauacm:materiaNombre>Programación web</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Redes_de_computadoras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Redes_de_computadoras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_computadoras"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Matematicas_discretas"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_operativos"/>
+        <ontologiauacm:materiaNombre>Redes de computadoras</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_distribuidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_distribuidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Arquitectura_de_computadoras"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Redes_de_computadoras"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_operativos"/>
+        <ontologiauacm:materiaNombre>Sistemas distribuidos</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisTR -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_embebidos -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#SisTR">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tiene"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:materiaNombre>Sistemas en Tiempo Real</ontologiauacm:materiaNombre>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_embebidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Sistemas_móviles_y_embebidos"/>
+        <ontologiauacm:materiaNombre>Sistemas embebidos</ontologiauacm:materiaNombre>
         <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
         <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_moviles_y_embebidos -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_en_tiempo_real -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_moviles_y_embebidos">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:areaNombre>Sistemas moviles y embebidos</ontologiauacm:areaNombre>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_en_tiempo_real">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Sistemas_móviles_y_embebidos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_embebidos"/>
+        <ontologiauacm:materiaNombre>Sistemas en tiempo real</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnologias_de_Bases_de_Datos -->
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_operativos -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnologias_de_Bases_de_Datos">
-        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area"/>
-        <rdf:type>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#tienePrerrequisitos"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia"/>
-                            </owl:Restriction>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdf:type>
-        <ontologiauacm:areaNombre>Tecnologias de Bases de Datos</ontologiauacm:areaNombre>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Sistemas_operativos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Construccion_y_evolucion_del_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Teoria_de_la_computacion"/>
+        <ontologiauacm:materiaNombre>Sistemas operativos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnicas_de_pruebas_de_software -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Tecnicas_de_pruebas_de_software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Analisis_y_modelamiento_de_software"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Aseguramiento_de_la_calidad_del_software"/>
+        <ontologiauacm:materiaNombre>Técnicas de pruebas de software</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Teoria_de_la_computacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Teoria_de_la_computacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Estructura_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Matematicas_discretas"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_orientada_a_objetos"/>
+        <ontologiauacm:materiaNombre>Teoría de la computación</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Termodinamica_fluidos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Termodinamica_fluidos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Obligatoria"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Algebra_geometria_analitica"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_diferencial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Calculo_integral"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mecanica_I"/>
+        <ontologiauacm:materiaNombre>Termodinámica y fluidos</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Alta</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#XML_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#XML_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Aplicaciones_Web"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Bases_de_datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Programacion_orientada_a_objetos"/>
+        <ontologiauacm:materiaNombre>XML 1</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#XML_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#XML_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Aplicaciones_Web"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#XML_1"/>
+        <ontologiauacm:materiaNombre>XML 2</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_de_negocios_(BI) -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_de_negocios_(BI)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Tecnologías_de_Bases_de_Datos"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Especialidad_en_bases_de_datos_II"/>
+        <ontologiauacm:materiaNombre>Inteligencia de negocios</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mapeo_objeto/relacional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Mapeo_objeto/relacional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Aplicaciones_Web"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#XML_2"/>
+        <ontologiauacm:materiaNombre>Mapeo objeto/relacional</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Seminario_de_inteligencia_artificial_I:_Redes_neuronales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Seminario_de_inteligencia_artificial_I:_Redes_neuronales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Inteligencia_Artificial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_artificial"/>
+        <ontologiauacm:materiaNombre>Seminario de inteligencia artificial I: Redes neuronales</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Seminario_de_inteligencia_artificial_II:_Computación_evolutiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Seminario_de_inteligencia_artificial_II:_Computación_evolutiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Materia_Optativa"/>
+        <ontologiauacm:tiene rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Area_de_Inteligencia_Artificial"/>
+        <ontologiauacm:tienePrerrequisitos rdf:resource="http://www.semanticweb.org/carola/ontologies/2026/3/OntologiaUACM#Inteligencia_artificial"/>
+        <ontologiauacm:materiaNombre>Seminario de inteligencia artificial II: Computación evolutiva</ontologiauacm:materiaNombre>
+        <ontologiauacm:materiaSemestre rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</ontologiauacm:materiaSemestre>
+        <ontologiauacm:prioridad>Media</ontologiauacm:prioridad>
     </owl:NamedIndividual>
     
 
